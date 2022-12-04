@@ -9,7 +9,7 @@ setInterval(function(){
     let secrotation=6*getsecond;
     let mysound= new Audio('clock sound.mp3');
 
-    hour.style.transform=`rotate(${30*gethrs + getmints/2}deg)`
+    hour.style.transform=`rotate(${30*gethrs + getmints/2} deg)`
     minutes.style.transform=`rotate(${6*getmints}deg)`
     second.style.transform=`rotate(${6*getsecond}deg)`
     mysound.play()
