@@ -10,7 +10,7 @@ background-color: green;
 
 .primary{
 position: absolute;
-background-color: black;
+background-color: blue;
 transform-origin: bottom;
 border-radius: 10px;
 }
