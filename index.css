@@ -5,12 +5,12 @@ background: url(clock.png);
 position: relative;
 background-size: 100%;
 margin: auto;
-background-color: blue;
+background-color: rgb(126, 106, 40);
 }
 
 .primary{
 position: absolute;
-background-color: blue;
+background-color: rgba(3, 3, 9, 0.923);
 transform-origin: bottom;
 border-radius: 10px;
 }
