@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+      name: webclock
+spec:
+  replicas: 4
+  selector:
+      matchLabels:
+              name: webclock
+  template:
+        metadata:
+              labels:
+                    name: webclock
+        spec:
+          containers:
+          - name: webclock
+            image: tapashdeb/awswebclock:latest
+            ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: webclock-service
+spec:
+  type: LoadBalancer
+  selector: 
+      name: webclock
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+
+
+        
